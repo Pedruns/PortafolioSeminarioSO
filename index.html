@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="container mx-auto px-4 py-8">
+    <!-- Header / Title Section -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2">Mi Portafolio</h1>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Bienvenido a mi portafolio
+      </p>
+      <p>
+        Por: Jose Pedro Reyes Alvarez
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <!-- Card Header -->
+        <div class="p-6 border-b">
+          <h2 class="text-4xl font-semibold text-gray-800">Actividad 5</h2>
+        </div>
+        
+        <!-- Card Content -->
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row gap-6">
+            <!-- PDF Viewer -->
+            <div class="flex-1 min-h-[500px] border rounded-lg overflow-hidden bg-gray-100">
+              <object
+                data="ReyesAlvarezJosePedroD02Actividad5.pdf"
+                type="application/pdf"
+                class="w-full h-full"
+              >
+                <div class="flex items-center justify-center h-full flex-col p-6 text-center">
+                  <p class="mb-4 text-gray-600">
+                    No se puede mostrar el PDF. Por favor, descárguelo para verlo.
+                  </p>
+                  <a href="ReyesAlvarezJosePedroD02Actividad5.pdf" download class="bg-primary text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    Descargar PDF
+                  </a>
+                </div>
+              </object>
+            </div>
+
+            <!-- Description -->
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">Conclusiones</h3>
+              <p class="mb-4 text-gray-600">
+                Aqui va ir la conclusion
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
